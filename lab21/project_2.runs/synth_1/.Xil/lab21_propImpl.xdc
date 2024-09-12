@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/aaaa1/project_1/project_1.srcs/constrs_1/new/man.xdc rfile:../../../project_1.srcs/constrs_1/new/man.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:F:/Github/CUM/lab21/project_2.srcs/constrs_1/new/man.xdc rfile:../../../project_2.srcs/constrs_1/new/man.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN V17 [get_ports {sw[0]}]
 set_property src_info {type:XDC file:1 line:4 export:INPUT save:INPUT read:READ} [current_design]
