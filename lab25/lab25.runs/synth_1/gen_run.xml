@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1726179093">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1726181206">
   <File Type="PA-TCL" Name="lab23.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="lab23_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="lab23_reports.tcl"/>
   <File Type="RDS-RDS" Name="lab23.vds"/>
+  <File Type="RDS-UTIL" Name="lab23_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="lab23_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="lab23.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="lab23_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="lab23_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/top.v">
