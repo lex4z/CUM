@@ -4,7 +4,13 @@ module lab23 (
  input logic [3 : 0]  sw,
  output logic [3 : 0] led
 );
+ assign led[3] = sw[3]^sw[2];
+ assign led[2] = sw[2]^sw[1];
+ assign led[1] = sw[1]^sw[0];
+ assign led[0] = sw[0];
+ 
  //assign led = (sw[0] << 3) + (sw[1]^sw[0] << 2) + (sw[2]^sw[1] << 1) + (sw[3]^sw[2]);
+  /*
  assign led = 
  (sw == 4'b0000) ? 4'b0000:
  (sw == 4'b0001) ? 4'b0001:
@@ -22,7 +28,7 @@ module lab23 (
  (sw == 4'b1101) ? 4'b1011:
  (sw == 4'b1110) ? 4'b1001:
  (sw == 4'b1111) ? 4'b1000:0;
- /*
+
 always @(sw)
  case(sw)
  4'b0000: led = 4'b0000;
