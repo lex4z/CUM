@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Thu Sep 19 20:58:45 2024
+# Process ID: 10245
+# Current directory: /home/user/lab32/lab31.runs/impl_1
+# Command line: vivado -log lab32.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source lab32.tcl -notrace
+# Log file: /home/user/lab32/lab31.runs/impl_1/lab32.vdi
+# Journal file: /home/user/lab32/lab31.runs/impl_1/vivado.jou
+# Running On: 0b61f16633a5, OS: Linux, CPU Frequency: , CPU Physical cores: 1, Host memory: 4111 MB
+#-----------------------------------------------------------
+source lab32.tcl -notrace

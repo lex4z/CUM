@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1726779519">
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="lab32_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS" Name="lab32_routed.rqs"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BG-BGN" Name="lab32.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="lab32.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="lab32.ltx"/>
+  <File Type="RBD_FILE" Name="lab32.rbd"/>
+  <File Type="NPI_FILE" Name="lab32.npi"/>
+  <File Type="RNPI_FILE" Name="lab32.rnpi"/>
+  <File Type="CFI_FILE" Name="lab32.cfi"/>
+  <File Type="RCFI_FILE" Name="lab32.rcfi"/>
+  <File Type="PL-PDI-FILE" Name="lab32_pld.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="lab32_soc.pdi"/>
+  <File Type="RDI-RDI" Name="lab32.vdi"/>
+  <File Type="PDI-FILE" Name="lab32.pdi"/>
+  <File Type="BITSTR-MMI" Name="lab32.mmi"/>
+  <File Type="BITSTR-BMM" Name="lab32_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="lab32.nky"/>
+  <File Type="BITSTR-RBT" Name="lab32.rbt"/>
+  <File Type="BITSTR-MSK" Name="lab32.msk"/>
+  <File Type="BG-BIN" Name="lab32.bin"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <File Type="BG-BIT" Name="lab32.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="lab31_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="lab31_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="lab31_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="lab31_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="lab31_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="lab31_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="lab32_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="lab32_postroute_physopt.dcp"/>
+  <File Type="BG-DRC" Name="lab32.drc"/>
+  <File Type="ROUTE-RQS-PB" Name="lab32_rqs_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="lab32_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="lab32_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW" Name="lab32_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="lab32_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="lab32_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="lab32_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="lab32_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="lab32_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="lab32_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="lab32_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="lab32_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="lab32_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="lab32_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="lab32_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="lab32_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="lab32_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="lab32_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="lab32_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="lab32_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="lab32_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="lab32_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="lab32_routed_error.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="lab32_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="lab32_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="lab32_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="lab32_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="lab32_postplace_pwropt.dcp"/>
+  <File Type="PLACE-RQA-PB" Name="lab32_rqa_placed.pb"/>
+  <File Type="PLACE-TIMING" Name="lab32_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="lab32_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="lab32_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="lab32_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="lab32_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="lab32_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="lab32_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="lab32_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="lab32_placed.dcp"/>
+  <File Type="PWROPT-TIMING" Name="lab32_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="lab32_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="lab32_pwropt.dcp"/>
+  <File Type="OPT-RQA-PB" Name="lab32_rqa_opted.pb"/>
+  <File Type="OPT-HWDEF" Name="lab32.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="lab32_methodology_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="lab32_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="lab32_opt.dcp"/>
+  <File Type="OPT-TIMING" Name="lab32_timing_summary_opted.rpt"/>
+  <File Type="REPORTS-TCL" Name="lab32_reports.tcl"/>
+  <File Type="INIT-TIMING" Name="lab32_timing_summary_init.rpt"/>
+  <File Type="PA-TCL" Name="lab32.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/top.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="lab32"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/man.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/lab31.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
