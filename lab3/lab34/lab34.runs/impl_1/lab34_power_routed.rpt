@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
-| Date             : Thu Sep 19 21:59:53 2024
-| Host             : 0b61f16633a5 running 64-bit Ubuntu 22.04.5 LTS
+| Date             : Fri Sep 20 12:35:55 2024
+| Host             : 5adc6c53a075 running 64-bit Ubuntu 22.04.5 LTS
 | Command          : report_power -file lab34_power_routed.rpt -pb lab34_power_summary_routed.pb -rpx lab34_power_routed.rpx
 | Design           : lab34
 | Device           : xc7a35tcpg236-1
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 11.801       |
+| Total On-Chip Power (W)  | 11.749       |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 11.629       |
-| Device Static (W)        | 0.172        |
+| Dynamic (W)              | 11.579       |
+| Device Static (W)        | 0.171        |
 | Effective TJA (C/W)      | 5.0          |
-| Max Ambient (C)          | 26.0         |
-| Junction Temperature (C) | 84.0         |
+| Max Ambient (C)          | 26.3         |
+| Junction Temperature (C) | 83.7         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -56,9 +56,9 @@ Table of Contents
 |   LUT as Logic |     0.060 |        8 |     20800 |            0.04 |
 |   Others       |     0.000 |        2 |       --- |             --- |
 | Signals        |     0.226 |       29 |       --- |             --- |
-| I/O            |    11.342 |       29 |       106 |           27.36 |
-| Static Power   |     0.172 |          |           |                 |
-| Total          |    11.801 |          |           |                 |
+| I/O            |    11.292 |       29 |       106 |           27.36 |
+| Static Power   |     0.171 |          |           |                 |
+| Total          |    11.749 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -68,9 +68,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.450 |       0.359 |      0.091 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.435 |       0.413 |      0.022 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     3.191 |       3.190 |      0.001 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.449 |       0.359 |      0.090 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.433 |       0.411 |      0.022 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     3.177 |       3.176 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -135,7 +135,7 @@ Table of Contents
 +-------+-----------+
 | Name  | Power (W) |
 +-------+-----------+
-| lab34 |    11.629 |
+| lab34 |    11.579 |
 +-------+-----------+
 
 

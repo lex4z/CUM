@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
-| Date         : Thu Sep 19 21:59:54 2024
-| Host         : 0b61f16633a5 running 64-bit Ubuntu 22.04.5 LTS
+| Date         : Fri Sep 20 12:35:55 2024
+| Host         : 5adc6c53a075 running 64-bit Ubuntu 22.04.5 LTS
 | Command      : report_timing_summary -max_paths 10 -report_unconstrained -file lab34_timing_summary_routed.rpt -pb lab34_timing_summary_routed.pb -rpx lab34_timing_summary_routed.rpx -warn_on_violation
 | Design       : lab34
 | Device       : 7a35t-cpg236
@@ -331,7 +331,7 @@ Slack:                    inf
                          net (fo=4, routed)           3.468     4.909    addr_IBUF[0]
     SLICE_X62Y15         LUT6 (Prop_lut6_I4_O)        0.124     5.033 f  seg_OBUF[6]_inst_i_5/O
                          net (fo=7, routed)           0.828     5.861    signal[1]
-    SLICE_X62Y16         LUT4 (Prop_lut4_I0_O)        0.124     5.985 r  seg_OBUF[4]_inst_i_1/O
+    SLICE_X62Y16         LUT4 (Prop_lut4_I1_O)        0.124     5.985 r  seg_OBUF[4]_inst_i_1/O
                          net (fo=1, routed)           1.837     7.822    seg_OBUF[4]
     U5                   OBUF (Prop_obuf_I_O)         3.520    11.342 r  seg_OBUF[4]_inst/O
                          net (fo=0)                   0.000    11.342    seg[4]

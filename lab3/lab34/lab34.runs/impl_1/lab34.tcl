@@ -115,7 +115,6 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
-set_msg_config -id {Common 17-41} -limit 10000000
 
 OPTRACE "impl_1" START { ROLLUP_1 }
 OPTRACE "Phase: Write Bitstream" START { ROLLUP_AUTO }
@@ -124,8 +123,8 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
+  set_param xicom.use_bs_reader 1
   set_param chipscope.maxJobs 2
-  set_param checkpoint.writeSynthRtdsInDcp 1
   set_param runs.launchOptions { -jobs 8  }
   open_checkpoint lab34_routed.dcp
   set_property webtalk.parent_dir /home/user/lab34/lab34.cache/wt [current_project]
