@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
-| Date         : Thu Sep 19 20:59:45 2024
-| Host         : 0b61f16633a5 running 64-bit Ubuntu 22.04.5 LTS
+| Date         : Fri Sep 20 11:18:31 2024
+| Host         : cf92375acbd4 running 64-bit Ubuntu 22.04.5 LTS
 | Command      : report_clock_utilization -file lab32_clock_utilization_routed.rpt
 | Design       : lab32
 | Device       : 7a35t-cpg236

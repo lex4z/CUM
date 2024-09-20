@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
-| Date         : Thu Sep 19 20:59:42 2024
-| Host         : 0b61f16633a5 running 64-bit Ubuntu 22.04.5 LTS
+| Date         : Fri Sep 20 11:18:28 2024
+| Host         : cf92375acbd4 running 64-bit Ubuntu 22.04.5 LTS
 | Command      : report_drc -file lab32_drc_routed.rpt -pb lab32_drc_routed.pb -rpx lab32_drc_routed.rpx
 | Design       : lab32
 | Device       : xc7a35tcpg236-1
@@ -24,12 +24,11 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 5
+             Violations found: 1
 +----------+----------+-----------------------------------------------------+------------+
 | Rule     | Severity | Description                                         | Violations |
 +----------+----------+-----------------------------------------------------+------------+
 | CFGBVS-1 | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
-| PDRC-153 | Warning  | Gated clock check                                   | 4          |
 +----------+----------+-----------------------------------------------------+------------+
 
 2. REPORT DETAILS
@@ -45,26 +44,6 @@ Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_des
  #where value2 is the voltage provided to configuration bank 0
 
 Refer to the device configuration user guide for more information.
-Related violations: <none>
-
-PDRC-153#1 Warning
-Gated clock check  
-Net dout_reg[0]_i_1_n_0 is a gated clock net sourced by a combinational pin dout_reg[0]_i_1/O, cell dout_reg[0]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#2 Warning
-Gated clock check  
-Net dout_reg[1]_i_1_n_0 is a gated clock net sourced by a combinational pin dout_reg[1]_i_1/O, cell dout_reg[1]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#3 Warning
-Gated clock check  
-Net dout_reg[2]_i_1_n_0 is a gated clock net sourced by a combinational pin dout_reg[2]_i_1/O, cell dout_reg[2]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#4 Warning
-Gated clock check  
-Net dout_reg[3]_i_1_n_0 is a gated clock net sourced by a combinational pin dout_reg[3]_i_1/O, cell dout_reg[3]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 

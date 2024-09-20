@@ -26,6 +26,7 @@ module lab33(
     input logic [1 : 0] addr2,
     output logic [3 : 0] dout
     );
+    logic dout2;
     
     lab31 mut(
     .din (din),

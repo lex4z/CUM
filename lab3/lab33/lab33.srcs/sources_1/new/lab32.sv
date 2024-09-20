@@ -26,8 +26,8 @@ module lab32(
     output logic [3 : 0] dout
     );
     
-    always_comb
-    
+    always_comb begin
+    dout = 4'b0000;
     case (addr)
     2'b00: dout[0] = din;
     2'b01: dout[1] = din;
@@ -36,6 +36,6 @@ module lab32(
     default: dout = 0;
     
     endcase
-    
+    end
     
 endmodule
