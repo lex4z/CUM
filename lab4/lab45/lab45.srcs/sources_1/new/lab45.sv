@@ -13,7 +13,7 @@ module lab45(
     dout_shifted = din;//da
     
     case (dir)
-        0: begin //left
+        1'b0: begin //left
             
             case(cmd)
                 2'b00: dout_shifted = din << 1;
@@ -23,7 +23,7 @@ module lab45(
             endcase
         end
         
-        1: begin //right
+        1'b1: begin //right
             case(cmd)
                 2'b00: dout_shifted = din >> 1;
                 2'b01: dout_shifted = {din[5],din[5:1]};
