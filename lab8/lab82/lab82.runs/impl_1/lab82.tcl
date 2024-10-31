@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "/home/user/lab82/lab82.runs/impl_1/lab82.tcl"
+  variable script "/home/user/lab8/lab82/lab82.runs/impl_1/lab82.tcl"
   variable category "vivado_impl"
 }
 
@@ -123,10 +123,10 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  set_param chipscope.maxJobs 2
-  set_param runs.launchOptions { -jobs 8  }
+  set_param chipscope.maxJobs 3
+  set_param runs.launchOptions { -jobs 12  }
   open_checkpoint lab82_routed.dcp
-  set_property webtalk.parent_dir /home/user/lab82/lab82.cache/wt [current_project]
+  set_property webtalk.parent_dir /home/user/lab8/lab82/lab82.cache/wt [current_project]
 set_property TOP lab82 [current_fileset]
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }

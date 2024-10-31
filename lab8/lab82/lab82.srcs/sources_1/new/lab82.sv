@@ -24,16 +24,31 @@ module lab82(
     logic change_state;
     logic gray_enable;
     logic counter25_delayed = 0;
-    logic counter24_delayed = 0;
+    //logic counter24_delayed = 0;
     
     always_ff @(posedge clk) begin
         counter25_delayed <= counter[25];//0.5 с
-        counter24_delayed <= counter[24];// не ровно 0.25 с, чтобы было ровно надо каждые 12.5 * 10^6 тактов менять состояние на противоположное реализации тут не будет
+        //counter24_delayed <= counter[24];// не ровно 0.25 с, чтобы было ровно надо каждые 12.5 * 10^6 тактов менять состояние на противоположное реализации тут не будет
     end
     
     assign change_state = btn * counter[25] * ~counter25_delayed;
-    assign gray_enable = counter[24] * ~counter24_delayed;
+    //assign gray_enable = counter[24] * ~counter24_delayed;
     
+    //0.25s gray anable
+    logic [23:0] counter_250ms = 0;
+    logic t250ms = 0;
+    
+    always_ff @(posedge clk) begin
+        if(counter_250ms == 12500000) t250ms <= ~t250ms;
+        else counter_250ms <= counter_250ms + 1;
+    end
+    
+    logic t250ms_delayed;
+    always_ff @(posedge clk) begin
+        t250ms_delayed <= t250ms;
+    end
+    
+    assign gray_enable = t250ms * ~t250ms_delayed;
     
     //douts
     logic [7 : 0] dout0;

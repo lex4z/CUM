@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "/home/user/lab82/lab82.runs/synth_1/lab82.tcl"
+  variable script "/home/user/lab8/lab82/lab82.runs/synth_1/lab82.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,22 +70,22 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 2
+set_param chipscope.maxJobs 3
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir /home/user/lab82/lab82.cache/wt [current_project]
-set_property parent.project_path /home/user/lab82/lab82.xpr [current_project]
+set_property webtalk.parent_dir /home/user/lab8/lab82/lab82.cache/wt [current_project]
+set_property parent.project_path /home/user/lab8/lab82/lab82.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo /home/user/lab82/lab82.cache/ip [current_project]
+set_property ip_output_repo /home/user/lab8/lab82/lab82.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_verilog -library xil_defaultlib -sv /home/user/lab82/lab82.srcs/sources_1/new/lab82.sv
+read_verilog -library xil_defaultlib -sv /home/user/lab8/lab82/lab82.srcs/sources_1/new/lab82.sv
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -95,12 +95,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/user/lab82/lab82.srcs/constrs_1/imports/user/man.xdc
-set_property used_in_implementation false [get_files /home/user/lab82/lab82.srcs/constrs_1/imports/user/man.xdc]
+read_xdc /home/user/lab8/lab82/lab82.srcs/constrs_1/imports/user/man.xdc
+set_property used_in_implementation false [get_files /home/user/lab8/lab82/lab82.srcs/constrs_1/imports/user/man.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental /home/user/lab82/lab82.srcs/utils_1/imports/synth_1/lab82.dcp
+read_checkpoint -auto_incremental -incremental /home/user/lab8/lab82/lab82.srcs/utils_1/imports/synth_1/lab82.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
