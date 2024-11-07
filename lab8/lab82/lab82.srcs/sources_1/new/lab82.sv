@@ -39,7 +39,10 @@ module lab82(
     logic t250ms = 0;
     
     always_ff @(posedge clk) begin
-        if(counter_250ms == 12500000) t250ms <= ~t250ms;
+        if(counter_250ms == 12500000) begin 
+            t250ms <= ~t250ms;
+            counter_250ms <= 0;
+        end
         else counter_250ms <= counter_250ms + 1;
     end
     
@@ -70,7 +73,7 @@ module lab82(
         end else begin
             if(gray_enable) begin
                 gray_counter <= gray_counter + 1;
-                dout3 <= {gray_counter[7],gray_counter[7:1]^gray_counter[6:0]};
+                dout3 <= {gray_counter[7],gray_counter[7:1]^gray_counter[6:0]}; //  gray_counter^(gray_counter>>1);
             end
         end
     end
