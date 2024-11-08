@@ -35,7 +35,8 @@ module lab102(
         if(din1 == 32'b0) dout = din2;
         if(din2 == 32'b0) dout = din1;
         
-        if(din1_exponent && din2_exponent) begin
+        if(din1_mantissa == din2_mantissa && din1_sign == ~din2_sign) dout = 32'b0;
+        else if(din1_exponent && din2_exponent) begin
             //выравнивание мантисс
             if(din1_exponent > din2_exponent) begin
                 din2_mantissa = din2_mantissa >> (din1_exponent - din2_exponent);
@@ -56,6 +57,11 @@ module lab102(
                 dout_exponent = dout_exponent + 1;
             end
             
+            //неожиданная нормировка
+            if(dout_mantissa[23] == 0) begin
+                dout_mantissa = dout_mantissa << 1;
+                dout_exponent = dout_exponent - 1;
+            end
             //запись финального результата
             dout = {dout_sign,dout_exponent,dout_mantissa[22:0]};
        end 
