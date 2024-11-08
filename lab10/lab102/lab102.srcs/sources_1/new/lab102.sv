@@ -32,38 +32,44 @@ module lab102(
         din2_mantissa = {1'b1,din2[22:0]};
         
         //чтобы не считать если одно из слагаемых 0
-        if(din1 == 32'b0) dout = din2;
-        if(din2 == 32'b0) dout = din1;
-        
-        if(din1_mantissa == din2_mantissa && din1_sign == ~din2_sign) dout = 32'b0;
-        else if(din1_exponent && din2_exponent) begin
-            //выравнивание мантисс
-            if(din1_exponent > din2_exponent) begin
-                din2_mantissa = din2_mantissa >> (din1_exponent - din2_exponent);
-                dout_exponent = din1_exponent;
-            end else if(din1_exponent < din2_exponent) begin
-                din1_mantissa = din1_mantissa >> (din2_exponent - din1_exponent);
-                dout_exponent = din2_exponent;
-            end
-            
-            //сумма, от которой затем берется модуль (if)
-            dout_mantissa = (din1_sign ? -din1_mantissa : din1_mantissa) + (din2_sign ? -din2_mantissa : din2_mantissa);
-            dout_sign = dout_mantissa[25];
-            if(dout_sign) dout_mantissa = (~dout_mantissa) + 1;
-            
-            //устранение переполнения
-            if(dout_mantissa[24]) begin
-                dout_mantissa = dout_mantissa >> 1;
-                dout_exponent = dout_exponent + 1;
-            end
-            
-            //неожиданная нормировка
-            if(dout_mantissa[23] == 0) begin
-                dout_mantissa = dout_mantissa << 1;
-                dout_exponent = dout_exponent - 1;
-            end
-            //запись финального результата
-            dout = {dout_sign,dout_exponent,dout_mantissa[22:0]};
-       end 
+        if(din1 == 32'b0) 
+            dout = din2;
+        else if(din2 == 32'b0) 
+            dout = din1;
+        else begin 
+            if(din1[30:0] == din2[30:0] && din1_sign == ~din2_sign)
+                dout = 32'b0;
+            else if(din1_exponent && din2_exponent) begin
+                //выравнивание мантисс
+                if(din1_exponent > din2_exponent) begin
+                    din2_mantissa = din2_mantissa >> (din1_exponent - din2_exponent);
+                    dout_exponent = din1_exponent;
+                end else if(din1_exponent < din2_exponent) begin
+                    din1_mantissa = din1_mantissa >> (din2_exponent - din1_exponent);
+                    dout_exponent = din2_exponent;
+                end else
+                    dout_exponent = din1_exponent;
+                
+                //сумма, от которой затем берется модуль (if)
+                dout_mantissa = (din1_sign ? -din1_mantissa : din1_mantissa) + (din2_sign ? -din2_mantissa : din2_mantissa);
+                dout_sign = dout_mantissa[25];
+                dout_mantissa = ({26{dout_sign}}^dout_mantissa) + dout_sign;
+                
+                //устранение переполнения
+                if(dout_mantissa[24]) begin
+                    dout_mantissa = dout_mantissa >> 1;
+                    dout_exponent = dout_exponent + 1;
+                end
+                
+                //неожиданная нормировка
+                if(dout_mantissa[23] == 0) begin
+                    dout_mantissa = dout_mantissa << 1;
+                    dout_exponent = dout_exponent - 1;
+                end
+                //запись финального результата
+                dout = {dout_sign,dout_exponent,dout_mantissa[22:0]};
+           end else
+                dout = 32'b0;
+       end
     end
 endmodule

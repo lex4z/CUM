@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Fri Nov  8 13:02:17 2024
+# Process ID: 27115
+# Current directory: /home/user/lab102/lab102.runs/synth_1
+# Command line: vivado -log lab102.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab102.tcl
+# Log file: /home/user/lab102/lab102.runs/synth_1/lab102.vds
+# Journal file: /home/user/lab102/lab102.runs/synth_1/vivado.jou
+# Running On: ec6012b78441, OS: Linux, CPU Frequency: , CPU Physical cores: 1, Host memory: 8322 MB
+#-----------------------------------------------------------
+source lab102.tcl -notrace
