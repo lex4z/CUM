@@ -16,9 +16,10 @@ module lab111_main #(
         if(din_v)
             window <= {din,window[0:WINDOW_SIZE-2]};
             accumulator <= accumulator + din - window[WINDOW_SIZE-1];
-        dout <= accumulator >> 3;
+        //dout <= accumulator[18:3];
     end
     
+    assign dout = accumulator[18:3];
     
     
 endmodule
