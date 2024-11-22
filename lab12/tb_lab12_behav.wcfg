@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_lab12_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_lab12" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="1,000.100000 us"></ZoomEndTime>
+      <Cursor1Time time="169.760000 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="193"></NameColumnWidth>
+      <ValueColumnWidth column_width="197"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="21" />
+   <wvobject type="logic" fp_name="/tb_lab12/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_lab12/rfd">
+      <obj_property name="ElementShortName">rfd</obj_property>
+      <obj_property name="ObjectShortName">rfd</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_lab12/srst">
+      <obj_property name="ElementShortName">srst</obj_property>
+      <obj_property name="ObjectShortName">srst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_lab12/din_v">
+      <obj_property name="ElementShortName">din_v</obj_property>
+      <obj_property name="ObjectShortName">din_v</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_lab12/din">
+      <obj_property name="ElementShortName">din[15:0]</obj_property>
+      <obj_property name="ObjectShortName">din[15:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_FIXED</obj_property>
+      <obj_property name="AnalogYRangeMin">-16000.000000</obj_property>
+      <obj_property name="AnalogYRRangeMax">16000.000000</obj_property>
+      <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_LINEAR</obj_property>
+      <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+      <obj_property name="AnalogHorizLine">0.000000</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_lab12/dout">
+      <obj_property name="ElementShortName">dout[21:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[21:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_lab12/barker_coeffs">
+      <obj_property name="ElementShortName">barker_coeffs[0:10]</obj_property>
+      <obj_property name="ObjectShortName">barker_coeffs[0:10]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_lab12/test_tapLine/u_tap/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_lab12/test_tapLine/u_tap/coeff">
+      <obj_property name="ElementShortName">coeff</obj_property>
+      <obj_property name="ObjectShortName">coeff</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_lab12/test_tapLine/u_tap/sample">
+      <obj_property name="ElementShortName">sample[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sample[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_lab12/test_tapLine/u_tap/sample_valid">
+      <obj_property name="ElementShortName">sample_valid</obj_property>
+      <obj_property name="ObjectShortName">sample_valid</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_lab12/test_tapLine/u_tap/prev_tap">
+      <obj_property name="ElementShortName">prev_tap[21:0]</obj_property>
+      <obj_property name="ObjectShortName">prev_tap[21:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_lab12/test_tapLine/u_tap/next_tap">
+      <obj_property name="ElementShortName">next_tap[21:0]</obj_property>
+      <obj_property name="ObjectShortName">next_tap[21:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_lab12/test_tapLine/u_tap/partSumLength">
+      <obj_property name="ElementShortName">partSumLength[31:0]</obj_property>
+      <obj_property name="ObjectShortName">partSumLength[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_lab12/test_tapLine/\genblk1[1].u_tap /clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_lab12/test_tapLine/\genblk1[1].u_tap /coeff">
+      <obj_property name="ElementShortName">coeff</obj_property>
+      <obj_property name="ObjectShortName">coeff</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_lab12/test_tapLine/\genblk1[1].u_tap /sample">
+      <obj_property name="ElementShortName">sample[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sample[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_lab12/test_tapLine/\genblk1[1].u_tap /sample_valid">
+      <obj_property name="ElementShortName">sample_valid</obj_property>
+      <obj_property name="ObjectShortName">sample_valid</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_lab12/test_tapLine/\genblk1[1].u_tap /prev_tap">
+      <obj_property name="ElementShortName">prev_tap[21:0]</obj_property>
+      <obj_property name="ObjectShortName">prev_tap[21:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_lab12/test_tapLine/\genblk1[1].u_tap /next_tap">
+      <obj_property name="ElementShortName">next_tap[21:0]</obj_property>
+      <obj_property name="ObjectShortName">next_tap[21:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_lab12/test_tapLine/\genblk1[1].u_tap /partSumLength">
+      <obj_property name="ElementShortName">partSumLength[31:0]</obj_property>
+      <obj_property name="ObjectShortName">partSumLength[31:0]</obj_property>
+   </wvobject>
+</wave_config>
