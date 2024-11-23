@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 
 module lab62(
-    input logic clk,
+    input  logic clk,
     output logic led
     );
     logic [26 : 0] counter = '0;

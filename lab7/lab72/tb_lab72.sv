@@ -6,7 +6,6 @@ module tb_lab72();
     logic [1 : 0] address;
     logic [2 : 0] din;
     logic [2 : 0] dout;
-    logic [3:0] [0:2] test;
     
     logic t = 0;
     
@@ -16,12 +15,12 @@ module tb_lab72();
     always_ff @(posedge clk) write_enable <= t;
     
     lab72 test72(
-    .clk (clk),
-    .address (address),
-    .write_enable (write_enable),
-    .sw (din),
-    .led (dout),
-    .ram_test (test));
+        .clk (clk),
+        .address (address),
+        .write_enable (write_enable),
+        .sw (din),
+        .led (dout)
+    );
     
     initial begin
         address = 2'b00;
@@ -62,7 +61,6 @@ module tb_lab72();
         #20;
         
         $stop;
-        
     end
     
 endmodule

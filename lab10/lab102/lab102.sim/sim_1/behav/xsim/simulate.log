@@ -1,3 +1,0 @@
-Time resolution is 1 ps
-$stop called at time : 90 ns : File "/home/user/lab102/lab102.srcs/sim_1/new/tb_lab102.sv" Line 63
-INFO: xsimkernel Simulation Memory Usage: 460660 KB (Peak: 513912 KB), Simulation CPU Usage: 70 ms

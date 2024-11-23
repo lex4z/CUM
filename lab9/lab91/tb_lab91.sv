@@ -9,10 +9,11 @@ module tb_lab91();
     always #(5) clk = ~clk;
     
     lab91 test91(
-    .clk(clk),
-    .x1(x1),
-    .x2(x2[7:0]),
-    .dout(dout));
+        .clk  (clk),
+        .x1   (x1),
+        .x2   (x2[7 : 0]),
+        .dout (dout)
+    );
     
     initial begin
         x1 = 16'b0000000000000011;
@@ -37,4 +38,5 @@ module tb_lab91();
         
         $stop;
     end
+
 endmodule

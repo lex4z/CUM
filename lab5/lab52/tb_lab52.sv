@@ -11,8 +11,9 @@ module tb_lab52();
     always # (clk_period*16) srst = ~srst;
     
     lab52 test_lab52(
-    .clk (clk),
-    .srst (srst),
-    .dout (t));
+        .clk  (clk),
+        .srst (srst),
+        .dout (t)
+    );
     
 endmodule

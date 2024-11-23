@@ -1,17 +1,18 @@
 `timescale 1ns / 1ps
 
 module lab55(
-    input logic clk,
-    input logic srst,
+    input  logic         clk,
+    input  logic         srst,
     output logic [1 : 0] coded
     );
     logic psp_bit;
     logic [6 : 0] code;
     
     lab54 psp_gen(
-    .clk (clk),
-    .srst (srst),
-    .psp_bit (psp_bit));
+        .clk (clk),
+        .srst (srst),
+        .psp_bit (psp_bit)
+    );
     
     always_ff @(posedge clk) begin
         if (srst) begin

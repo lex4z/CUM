@@ -1,8 +1,8 @@
 `timescale 1ns / 1ps
 
 module lab52(
-    input logic clk,
-    input logic srst,
+    input  logic          clk,
+    input  logic          srst,
     output logic [15 : 0] dout
     );
     logic [15 : 0]  shifter;

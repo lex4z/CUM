@@ -1,5 +1,0 @@
-vhdl xil_defaultlib  \
-"../../../../lab46.gen/sources_1/ip/mult_gen_1/sim/mult_gen_1.vhd" \
-
-# Do not sort compile order
-nosort

@@ -8,21 +8,22 @@ module tb_lab71();
     always #(5) clk = ~clk;
     
     lab71 test71(
-    .clk (clk),
-    .srst (srst),
-    .led (dout)
+        .clk  (clk),
+        .srst (srst),
+        .led  (dout)
     );
     
     initial begin
         srst = 1;
-        #10 srst = 0;
+        #10 
+        
+        srst = 0;
         
         #320;
+
         #320;
-        $stop;
         
-        
-    
+        $stop;  
     end
     
 endmodule

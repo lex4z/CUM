@@ -1,8 +1,8 @@
 `timescale 1ns / 1ps
 
 module lab54(
-    input logic clk,
-    input logic srst,
+    input  logic clk,
+    input  logic srst,
     output logic psp_bit
     );
     logic [14 : 0] shifter = 15'b101010001110110;

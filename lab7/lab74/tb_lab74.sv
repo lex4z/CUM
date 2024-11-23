@@ -13,14 +13,16 @@ module tb_lab74();
     logic [WIDTH-1 : 0] dout;
     logic write_enable;
     
-    lab74  #(.WIDTH (WIDTH),
-             .LENGTH (LENGTH))
+    lab74  #(
+        .WIDTH  (WIDTH),
+        .LENGTH (LENGTH))
     test74 (
-    .clk (clk),
-    .din (din),
-    .dout (dout),
-    .write_enable (write_enable),
-    .address (address));
+        .clk          (clk),
+        .din          (din),
+        .dout         (dout),
+        .write_enable (write_enable),
+        .address      (address)
+    );
     
     logic [3 : 0] address1 = 0;
     always_ff @(posedge clk) address1 <= address1 + 1;

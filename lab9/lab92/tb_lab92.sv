@@ -6,13 +6,14 @@ module tb_lab92();
     logic [7 : 0] x2;
     logic [7 : 0] dout;
     
-    always #(5) clk=~clk;
+    always #(5) clk = ~clk;
     
     lab92 test92(
-    .clk(clk),
-    .x1(x1),
-    .x2(x2),
-    .dout(dout));
+        .clk  (clk),
+        .x1   (x1),
+        .x2   (x2),
+        .dout (dout)
+    );
     
     initial begin
         x1 = 8'b00100000;

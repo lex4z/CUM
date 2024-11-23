@@ -5,8 +5,9 @@ module tb47();
     logic [9 : 0] y;
     
     lab47 test47(
-    .x (x),
-    .y (y));
+        .x (x),
+        .y (y)
+    );
     
     initial begin
         for (x = 0; x < 256; x++) #10;

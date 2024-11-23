@@ -5,24 +5,23 @@ module tb_lab54();
     logic clk = 0;
     logic srst = 1;
     logic psp_bit;
+
+    always # (clk_period/2) clk = ~clk;
     
-    initial forever #5 clk = ~clk;
-    //always # (clk_period) clk = ~clk;
-    //always # (clk_period*32) srst = ~srst;
+    lab54 test54(
+        .clk (clk),
+        .srst (srst),
+        .psp_bit (psp_bit)
+    );
+
     initial begin
         srst = 1;
         #10;
+        
         srst = 0;
         #100;
         
         $stop;
     end
-    
-    
-    lab54 test54(
-    .clk (clk),
-    .srst (srst),
-    .psp_bit (psp_bit));
-    
     
 endmodule

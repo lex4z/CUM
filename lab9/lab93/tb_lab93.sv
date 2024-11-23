@@ -5,17 +5,16 @@ module tb_lab93();
     logic [7 : 0] x1;
     logic [7 : 0] x2;
     logic [7 : 0] dout;
-    //logic [15:0] test;
-    
-    always #(5) clk=~clk;
+
+    always #(5) clk = ~clk;
     
     lab93 test93(
-    .clk(clk),
-    .x1(x1),
-    .x2(x2),
-    .dout(dout));
-    //, .test(test));
-    
+        .clk  (clk),
+        .x1   (x1),
+        .x2   (x2),
+        .dout (dout)
+    );
+
     initial begin
         x1 = 8'b00100000;
         x2 = 8'b00001000;
@@ -45,7 +44,7 @@ module tb_lab93();
         x2 = 8'b00110000;
         #10;
         
-        
         $stop;
     end
+
 endmodule

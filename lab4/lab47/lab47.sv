@@ -5,11 +5,11 @@ module lab47(
     output logic [9 : 0] y
     );
     const logic [7:0] cnst = 8'b10110110;
-    logic [15 : 0] temp;
+    logic [17 : 0] temp;
     
     always_comb begin
-        temp = x * cnst; //y * 2^6
-        y = temp >> 6;
+        temp = x * cnst; //8 бит после запятой
+        y = temp >> 6;   // 2 бита после зарятой
     end
     
 endmodule

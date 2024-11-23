@@ -9,8 +9,8 @@ module lab63(
     logic [29 : 0] counter = '0;
     
     always_ff @(posedge clk) begin
-        if(srst) counter <= '0;
-        else if(mode) counter <= counter - 1;
+        if (srst) counter <= '0;
+        else if (mode) counter <= counter - 1;
         else counter <= counter + 1;
     end
     

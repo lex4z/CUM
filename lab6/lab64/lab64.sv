@@ -9,15 +9,15 @@ module lab64(
     logic [7 : 0] shifter;
     logic counter26_delayed;
     logic en;
-    
-    assign en = counter[26] * (~counter26_delayed);
-    
+
     always_ff @(posedge clk) begin
         if (srst) counter <= '0;
         else counter <= counter + 1;
     end
     
     always_ff @(posedge clk) counter26_delayed <= counter[26];
+    
+    assign en = counter[26] * (~counter26_delayed);
     
     always_ff @(posedge clk) begin
         if (srst) shifter <= 8'b00000001;

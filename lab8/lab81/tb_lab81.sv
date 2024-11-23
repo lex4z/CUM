@@ -7,10 +7,11 @@ module tb_lab81();
     logic [1 : 0] coded;
     
     lab82 test81(
-    .clk (clk),
-    .srst(srst),
-    .info(info),
-    .coded(coded));
+        .clk   (clk),
+        .srst  (srst),
+        .info  (info),
+        .coded (coded)
+    );
     
     always #(5) clk = ~clk;
     
