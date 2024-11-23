@@ -5,9 +5,9 @@ module lab24 (
     output logic [6 : 0] seg,
     output logic [3 : 0] an
     );
-
-    assign an = 4'b1110;
     
+    assign an = 4'b1110;
+
     assign seg = 
     (sw == 4'b0000) ? ~(7'b0111111):
     (sw == 4'b0001) ? ~(7'b0000110):
