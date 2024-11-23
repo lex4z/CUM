@@ -1,7 +1,6 @@
 set script_path [file dirname [file normalize [info script]]]
 set NewLoc [string range $script_path 0 [string last / $script_path]-5]
 
-puts "$NewLoc"
 #set proj_dir "Example_$date_string"
 #puts "Creating build directory $proj_dir"
 #file mkdir ~/$proj_dir
